@@ -1,0 +1,15 @@
+/*=========================================================================================
+    File Name: _themeDark.scss
+    Description: partial- Styles for dark theme
+    ----------------------------------------------------------------------------------------
+    Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+        Author: Pixinvent
+    Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+.theme-dark {
+    // Changes color code of dark color
+    --vs-dark: 184, 194, 204;
+
+    background-color: $content-dark-bg;
+    color: $theme-dark-text-color !important;
+}
