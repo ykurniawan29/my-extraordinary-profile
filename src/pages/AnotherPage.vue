@@ -1,6 +1,7 @@
 <template>
     <div id="another-page">
-        <h1>Healaaah Jancook yo Cooook</h1>
+        <h1>This is Home</h1>
+        <h2>Piye bos kapan sugeh?</h2>
     </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        <h1>Profilenya Yusuf Gantenk</h1>
         <router-view></router-view>
     </div>
 </template>

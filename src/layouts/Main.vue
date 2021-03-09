@@ -1,7 +1,6 @@
 <template>
     <div class="layout__main" :class="[footerClasses]">
         <navigation-menu :menuItems="menuItems"></navigation-menu>
-        <h1>This is Main</h1>
         <div id="content-area">
             <div id="content-overlay" />
 

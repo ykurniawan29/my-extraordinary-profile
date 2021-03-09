@@ -12,4 +12,26 @@
 
     background-color: $content-dark-bg;
     color: $theme-dark-text-color !important;
+
+    // Label
+    label {
+        color: $theme-dark-text-color;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $theme-dark-heading-color;
+    }
+}
+
+// footer layouts
+.footer-sticky {
+    .footer {
+        background-color: $dark-card-color;
+        color: $white !important;
+    }
 }

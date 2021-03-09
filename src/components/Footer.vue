@@ -3,6 +3,7 @@
         <p>
             <span>COPYRIGHT &copy;</span>
             <span>{{ new Date().getFullYear() }}</span>
+            <span> Yusuf Kurniawan</span>
         </p>
     </footer>
 </template>
