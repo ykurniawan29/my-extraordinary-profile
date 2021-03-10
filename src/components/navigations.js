@@ -2,11 +2,31 @@ export default [
     {
         to: '/',
         name: 'home',
-        title: 'Home',
+        title: 'Haloooo',
+        icon: 'user-secret',
     },
     {
         to: '/another-page',
         name: 'another-page',
-        title: 'Another Page',
+        title: 'Boskuuuu',
+        icon: 'igloo',
+    },
+    {
+        to: '/another-page',
+        name: 'another-page',
+        title: 'Piyeeeeee',
+        icon: 'igloo',
+    },
+    {
+        to: '/another-page',
+        name: 'another-page',
+        title: 'Kabareeeee',
+        icon: 'igloo',
+    },
+    {
+        to: '/another-page',
+        name: 'another-page',
+        title: 'Apiiiik?',
+        icon: 'igloo',
     },
 ];

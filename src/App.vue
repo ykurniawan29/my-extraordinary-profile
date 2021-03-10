@@ -1,17 +1,17 @@
 <template>
-    <div id="app">
-        <router-view></router-view>
-    </div>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 import { onMounted } from 'vue';
 export default {
-    name: 'App',
-    setup() {
-        onMounted(() => {
-            document.body.classList.add('theme-dark');
-        });
-    },
+  name: 'App',
+  setup() {
+    onMounted(() => {
+      document.body.classList.add('theme-dark');
+    });
+  },
 };
 </script>
