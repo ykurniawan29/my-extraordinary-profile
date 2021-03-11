@@ -1,23 +1,35 @@
 <template>
   <header
-    class="w-72 flex fixed left-0 min-h-screen pt-20 px-16 pb-16 bg-red-400 items-start flex-col"
+    class="w-80 flex fixed left-0 min-h-screen xl:pt-20 md:pt-12 px-10 pb-16 items-start flex-col bg-lightbg2 dark:bg-darkbg2"
   >
-    <div class="logo">
+    <div id="logo" class="mx-auto">
       <a href="#">
-        <img src="cat.svg" alt="Ini kucing" />
+        <img class="max-h-40" src="cat.svg" alt="Ini kucing" />
       </a>
     </div>
 
     <nav>
-      <ul class="my-20 list-none p-0">
+      <ul class="xl:my-48 md:my-24 list-none p-0">
         <li class="py-3 relative" v-for="(item, key) in menuItems" :key="key">
-          <fa-icon class="mx-2" :icon="['fas', item.icon]"></fa-icon>
-          <router-link :to="item.to" :class="{ active: isActive(item.to) }">
+          <router-link
+            :to="item.to"
+            :class="{ active: isActive(item.to) }"
+            class="font-extrabold text-lg dark:text-white dark:hover:text-primary transition duration-300 ease-in-out"
+          >
+            <fa-icon
+              class="mx-4 text-2xl text-primary"
+              :icon="['fas', item.icon]"
+              fixed-width
+            ></fa-icon>
             {{ item.title }}
           </router-link>
         </li>
       </ul>
     </nav>
+
+    <div id="footer" class="items-center mt-auto mx-auto dark:text-primary">
+      <span>&COPY;2021 Vozark</span>
+    </div>
   </header>
 </template>
 

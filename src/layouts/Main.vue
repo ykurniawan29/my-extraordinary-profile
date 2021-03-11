@@ -17,17 +17,7 @@ export default {
     bestFooter,
   },
   setup() {
-    const page = reactive({
-      footerType: 'sticky',
-    });
-
-    const footerClasses = computed(() => {
-      return {
-        'footer-sticky': page.footerType === 'sticky',
-      };
-    });
-
-    return { menuItems, footerClasses };
+    return { menuItems };
   },
 };
 </script>
