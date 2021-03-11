@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="preloader"></div>
     <router-view></router-view>
   </div>
 </template>
@@ -10,7 +11,7 @@ export default {
   name: 'App',
   setup() {
     onMounted(() => {
-      document.body.classList.add('theme-dark');
+      document.documentElement.classList.add('dark');
     });
   },
 };

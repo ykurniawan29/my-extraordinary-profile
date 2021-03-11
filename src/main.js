@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import '/@/index.css';
 
-import './assets/scss/main.scss';
 const app = createApp(App);
 app.use(router);
 app.mount('#app');
