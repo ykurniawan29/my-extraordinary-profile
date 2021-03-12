@@ -1,15 +1,19 @@
 <template>
   <navigation-menu :menuItems="menuItems"></navigation-menu>
-  <main class="ml-72 p-16">
-    <h1 class="text-4xl">Halo bosku</h1>
+  <main class="ml-72">
+    <router-view v-slot="{ Component }">
+      <transition name="zoom-fade">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
   </main>
 </template>
 
 <script>
 import { reactive, computed } from 'vue';
-import menuItems from '/@/components/navigations';
-import navigationMenu from '/@/components/Navigation.vue';
-import bestFooter from '/@/components/Footer.vue';
+import menuItems from '/@/layouts/components/navigations';
+import navigationMenu from '/@/layouts/components/Navigation.vue';
+import bestFooter from '/@/layouts/components/Footer.vue';
 
 export default {
   components: {
