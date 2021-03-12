@@ -1,7 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import Main from './layouts/Main.vue';
 import Home from './pages/Home.vue';
-import AnotherPage from './pages/AnotherPage.vue';
 const history = createWebHistory();
 const routes = [
     {
@@ -15,12 +14,27 @@ const routes = [
             {
                 path: '/home',
                 name: 'home',
-                component: Home,
+                component: () => import('./pages/Home.vue'),
             },
             {
-                path: '/another-page',
-                name: 'another-page',
-                component: AnotherPage,
+                path: '/about',
+                name: 'about',
+                component: () => import('./pages/About.vue'),
+            },
+            {
+                path: '/experience',
+                name: 'experience',
+                component: () => import('./pages/Experience.vue'),
+            },
+            {
+                path: '/works',
+                name: 'works',
+                component: () => import('./pages/Works.vue'),
+            },
+            {
+                path: '/contact',
+                name: 'contact',
+                component: () => import('./pages/Contact.vue'),
             },
         ],
     },
