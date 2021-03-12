@@ -1,5 +1,5 @@
 Arguments: 
-  /home/ykurniawan29/.nvm/versions/node/v14.4.0/bin/node /home/ykurniawan29/.nvm/versions/node/v14.4.0/bin/yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
+  /home/ykurniawan29/.nvm/versions/node/v14.4.0/bin/node /home/ykurniawan29/.nvm/versions/node/v14.4.0/bin/yarn add @fortawesome/free-brand-svg-icons
 
 PATH: 
   /home/ykurniawan29/.local/bin:/home/ykurniawan29/.nvm/versions/node/v14.4.0/bin:/home/ykurniawan29/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,8 +14,17 @@ Platform:
   linux x64
 
 Trace: 
-  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+  Error: https://registry.yarnpkg.com/@fortawesome%2ffree-brand-svg-icons: Not found
+      at Request.params.callback [as _callback] (/home/ykurniawan29/.nvm/versions/node/v14.4.0/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/ykurniawan29/.nvm/versions/node/v14.4.0/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/home/ykurniawan29/.nvm/versions/node/v14.4.0/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/home/ykurniawan29/.nvm/versions/node/v14.4.0/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1224:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
 
 npm manifest: 
   {
@@ -26,6 +35,9 @@ npm manifest:
       "build": "vite build"
     },
     "dependencies": {
+      "@fortawesome/fontawesome-svg-core": "^1.2.34",
+      "@fortawesome/free-solid-svg-icons": "^5.15.2",
+      "@fortawesome/vue-fontawesome": "^3.0.0-3",
       "vue": "^3.0.4",
       "vue-router": "4",
       "vuesax": "^4.0.1-alpha.25"
@@ -34,6 +46,7 @@ npm manifest:
       "@vue/compiler-sfc": "^3.0.4",
       "autoprefixer": "^10.2.4",
       "postcss": "^8.2.6",
+      "postcss-import": "^14.0.0",
       "sass": "^1.32.8",
       "sass-loader": "^11.0.1",
       "tailwindcss": "^2.0.3",
@@ -83,6 +96,30 @@ Lockfile:
       "@babel/helper-validator-identifier" "^7.12.11"
       lodash "^4.17.19"
       to-fast-properties "^2.0.0"
+  
+  "@fortawesome/fontawesome-common-types@^0.2.34":
+    version "0.2.34"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.34.tgz#0a8c348bb23b7b760030f5b1d912e582be4ec915"
+    integrity sha512-XcIn3iYbTEzGIxD0/dY5+4f019jIcEIWBiHc3KrmK/ROahwxmZ/s+tdj97p/5K0klz4zZUiMfUlYP0ajhSJjmA==
+  
+  "@fortawesome/fontawesome-svg-core@^1.2.34":
+    version "1.2.34"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.34.tgz#1d1a7c92537cbc2b8a83eef6b6d824b4b5b46b26"
+    integrity sha512-0KNN0nc5eIzaJxlv43QcDmTkDY1CqeN6J7OCGSs+fwGPdtv0yOQqRjieopBCmw+yd7uD3N2HeNL3Zm5isDleLg==
+    dependencies:
+      "@fortawesome/fontawesome-common-types" "^0.2.34"
+  
+  "@fortawesome/free-solid-svg-icons@^5.15.2":
+    version "5.15.2"
+    resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.15.2.tgz#25bb035de57cf85aee8072965732368ccc8e8943"
+    integrity sha512-ZfCU+QjaFsdNZmOGmfqEWhzI3JOe37x5dF4kz9GeXvKn/sTxhqMtZ7mh3lBf76SvcYY5/GKFuyG7p1r4iWMQqw==
+    dependencies:
+      "@fortawesome/fontawesome-common-types" "^0.2.34"
+  
+  "@fortawesome/vue-fontawesome@^3.0.0-3":
+    version "3.0.0-3"
+    resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-3.0.0-3.tgz#b658a7c1f35d4eb04ac85749da693be483442b25"
+    integrity sha512-fCM7+R9M7Y/ipKC5n9hukGpJHhe53JOENGqtku/KWtpXsnbGik3AS5zfJYEupV2uXOw/5S0RSSfttQ2hNIrmFA==
   
   "@fullhuman/postcss-purgecss@^3.1.3":
     version "3.1.3"
@@ -1837,6 +1874,15 @@ Lockfile:
       read-cache "^1.0.0"
       resolve "^1.1.7"
   
+  postcss-import@^14.0.0:
+    version "14.0.0"
+    resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-14.0.0.tgz#3ed1dadac5a16650bde3f4cdea6633b9c3c78296"
+    integrity sha512-gFDDzXhqr9ELmnLHgCC3TbGfA6Dm/YMb/UN8/f7Uuq4fL7VTk2vOIj6hwINEwbokEmp123bLD7a5m+E+KIetRg==
+    dependencies:
+      postcss-value-parser "^4.0.0"
+      read-cache "^1.0.0"
+      resolve "^1.1.7"
+  
   postcss-js@^3.0.3:
     version "3.0.3"
     resolved "https://registry.yarnpkg.com/postcss-js/-/postcss-js-3.0.3.tgz#2f0bd370a2e8599d45439f6970403b5873abda33"
@@ -1917,7 +1963,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
     integrity sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==
   
-  postcss-value-parser@^4.1.0:
+  postcss-value-parser@^4.0.0, postcss-value-parser@^4.1.0:
     version "4.1.0"
     resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
     integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==

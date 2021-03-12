@@ -10,13 +10,15 @@ module.exports = {
                 primary: '#e94560',
                 lightbg: '#dddddd',
                 lightbg2: '#f9f3f3',
-                darkbg: '#1a1a2e',
+                darkbg: '#2b2e4a',
                 darkbg2: '#16213e',
             },
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            margin: ['last'],
+        },
     },
     plugins: [],
 };
